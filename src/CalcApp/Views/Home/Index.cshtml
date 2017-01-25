@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="CalcApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="CalcController as calc">
+
+    <input type="number" ng-model="a" />
+    <input type="number" ng-model="b" />
+    <br />
+    <br />
+    <br />
+    <button ng-click="calc.addNums(a,b)">ADD</button>
+    <button ng-click="calc.subNums(a,b)">SUB</button>
+    <button ng-click="calc.multNums(a,b)">MULT</button>
+    <button ng-click="calc.divNums(a,b)">DIV</button>
+    <h1>{{calc.results}}
+   </h1>
+
+
+
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>
